@@ -1,0 +1,15 @@
+<%= form_for @painting do |f| %>
+  <!-- Validation code omitted -->
+
+  <%= f.hidden_field :key %>
+
+  <p>File: <%= @painting.image_name %></p>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
